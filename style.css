@@ -1,0 +1,224 @@
+/*couleurs
+rouge : #800000
+vert : #3E8536
+gris : #BOABAC */
+
+
+ul {
+    display: flex;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  
+/*HEADER*/
+.logo {
+  width: 100px;
+  height: 80px;
+}
+
+.menu {
+  background-color: #800000;
+  block-size : 40px;
+  font-size: 20px;
+}
+
+.menu ul { /*met le menu au bon endroit*/
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  margin-right: 10%;
+}
+
+.menu ul li a{ /*change le menu de couleur*/
+    padding: 25px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul li a:hover {
+  border-bottom: 4px solid #B0ABAC;
+  line-height: 0;
+}
+
+#menu{ /*décale le logo et le titre vers la droite*/
+  width: 90%;
+  margin: 0 auto;
+  top: 0px;
+  padding: 0px 70px 5px;
+}
+
+@media (min-width: 768px) {
+  .menu nav ul li a {
+      font-size: 25px;
+      padding: 20px;
+  }
+}
+
+/* Page match */
+
+.match {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: space-between;
+}
+/* Liste des matchs */
+/* Styles for the layout of the page */
+.Listes_matchs {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  background-color: #3E8536;
+}
+.Prochains_matchs {
+  width: 50%;
+  padding: 20px;
+}
+.Matchs_passes {
+  width: 50%;
+  padding: 20px;
+}
+/* Styles for the table displaying the matches */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #B0ABAC;
+  padding: 8px;
+  text-align: left;
+}
+.notes formS{
+  display: flex;
+  padding: 20px;
+  background-color: #3E8536;
+}
+
+
+/*connexion*/
+.connexion{
+  background: #800000;
+ }
+ #connexion{
+  width:400px;
+  margin:0 auto;
+  margin-top:10%;
+ }
+ /* Bordered form */
+ #connexion form {
+  width:100%;
+  padding: 30px;
+  border: 1px solid #B0ABAC;
+  background: #B0ABAC;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+ }
+
+ #connexion h1{
+  width: 38%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+ }
+
+ #connexion{
+  width:400px;
+  margin:0 auto;
+  margin-top:10%;
+ }
+ 
+ /* Full-width inputs */
+ input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #B0ABAC;
+  box-sizing: border-box;
+ }
+ 
+ /* Set a style for all buttons */
+ input[type=submit] {
+  background-color: #3E8536;
+  color: #B0ABAC;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+ }
+
+ input[type=submit]:hover {
+  background-color: white;
+  color: #3E8536;
+  border: 1px solid #3E8536;
+ }
+ 
+
+
+ /* Mon compte */
+ /* Add some basic styling for the table */
+ table {
+     border-collapse: collapse;
+     width: 50%;
+     margin: 0 auto;
+ }
+ th, td {
+     border: 1px solid #B0ABAC;
+     padding: 8px;
+     text-align: left;
+ }
+ th {
+     background-color: #B0ABAC;
+ }
+ /* Center the heading and links */
+ h1 {
+     text-align: center;
+ }
+ a {
+     margin-right: 10px;
+ }
+
+
+/* Ajouter un joueur */
+.ajoutJoueur form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #B0ABAC;
+  background-color: #B0ABAC;
+}
+  
+.ajoutJoueur label {
+  display: block;
+  margin-bottom: 10px;
+}
+  
+.ajoutJoueur input[type="text"], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+}
+  
+.ajoutJoueur input[type="submit"] {
+  width: 100%;
+  background-color: #3E8536;
+  color: #dddddd;
+  border: none;
+  cursor: pointer;
+}
+  
+.ajoutJoueur input[type="submit"]:hover {
+  background-color: #3E8536;
+}
+.AnnulerOuValider{
+  display: flex;
+  text-align: center;
+  padding: 14px 20px;
+  margin: 8px 0;
+}
